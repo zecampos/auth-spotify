@@ -8,8 +8,6 @@ let redirect_uri =
   process.env.REDIRECT_URI || 
   'http://localhost:8888/callback'
 
-const CLIENT_ID = '9f42c671a8fa412283d4e34c63466ed4'
-const SECRET_TOKEN = '5519760832ea44a2b38166101599254c'
 
 app.get('/login', function(req, res) {
   res.redirect('https://accounts.spotify.com/authorize?' +
